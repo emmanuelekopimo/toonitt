@@ -1,0 +1,73 @@
+h1 {
+  margin-bottom: 0px;
+}
+
+.nav-text {
+  font-size: 1.3rem;
+}
+
+.nav-link {
+  cursor: pointer;
+  color: blue;
+}
+
+.title {
+  font-size: 3.3rem;
+}
+
+.subtitle {
+  font-size: 2.2rem;
+}
+
+.solid {
+  color: white;
+  background-color: rgb(22, 22, 22);
+  padding-inline: 5px;
+  border-radius: 8px;
+}
+
+.welcome {
+  margin-top: 0px;
+}
+.side-title {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  color: white;
+}
+
+.side-text {
+  color: white;
+}
+
+.section-title {
+  font-size: 1.8rem;
+}
+
+.content {
+  font-size: 1.3rem;
+  text-align: justify;
+}
+
+.detail {
+  color: white;
+  font-size: 23px;
+  margin-block: 2px;
+  font-weight: 300;
+}
+
+.detail-footer {
+  color: white;
+}
+.final .solid {
+  color: rgb(22, 22, 22);
+  background-color: white;
+}
+
+.description .solid {
+  color: rgb(22, 22, 22);
+  background-color: white;
+}
+
+.description {
+  color: white;
+}
