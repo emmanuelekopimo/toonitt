@@ -1,6 +1,6 @@
 const latest = document.querySelector(".latest-videos");
 
-fetch("http://localhost:3000/?page=1")
+fetch("https://outrageous-elk-wear.cyclic.app/?page=1")
   .then((res) => {
     return res.json();
   })

@@ -36,10 +36,5 @@ const updateStyles = () => {
   }
 };
 
-const scrollPageLittle = () => {
-  html.scrollBy(0, 1000);
-};
-
 document.addEventListener("scroll", updateStyles, { passive: true });
-document.addEventListener("resize", scrollPageLittle);
 setTimeout(updateStyles, 400);
