@@ -89,6 +89,15 @@ b {
   margin-block: 10px;
 }
 
+.block.subscribe-area {
+  padding-inline: 0px;
+  padding-block: 1px;
+}
+
+.side-title.subscribe-area {
+  color: rgb(20, 20, 20);
+}
+
 .button-group {
   display: grid;
   grid-template-columns: 1fr;
@@ -128,19 +137,6 @@ b {
   background-color: white;
   padding-inline: 0px;
   padding-block: 10px;
-}
-
-.subscribe-button {
-  width: 100%;
-  background-color: white;
-  border: none;
-  margin-block: 5px;
-  font-size: 1.4rem;
-  padding-block: 8px;
-}
-
-.subscribe-button:hover {
-  opacity: 0.7;
 }
 
 .final {

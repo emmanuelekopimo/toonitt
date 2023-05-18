@@ -71,3 +71,8 @@ h1 {
 .description {
   color: white;
 }
+
+.email-text {
+  font-size: 20px;
+  font-weight: initial;
+}
