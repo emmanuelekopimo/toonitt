@@ -217,6 +217,10 @@ b {
   font-weight: 800;
 }
 
+.response {
+  color: white;
+}
+
 @media (min-width: 1390px) {
   .side {
     width: 23%;
