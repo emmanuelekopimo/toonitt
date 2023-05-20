@@ -48,4 +48,5 @@ fetch(`https://outrageous-elk-wear.cyclic.app/?page=${page}`)
         </div>`;
     element.innerHTML = content;
     latest.append(element);
+    latest.classList.add("error");
   });
