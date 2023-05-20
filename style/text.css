@@ -3,7 +3,7 @@ h1 {
 }
 
 .nav-text {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .nav-link {
@@ -44,8 +44,18 @@ h1 {
 }
 
 .content {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   text-align: justify;
+}
+
+.content-left {
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+.content.white {
+  color: white;
+  padding-bottom: 4px;
 }
 
 .detail {
@@ -73,6 +83,17 @@ h1 {
 }
 
 .email-text {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: initial;
+}
+
+.primary-name {
+  color: white;
+  font-size: 22px;
+  margin-top: -58px;
+  margin-left: 95px;
+}
+
+.profile-content {
+  margin-block: 10px;
 }

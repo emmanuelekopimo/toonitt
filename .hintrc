@@ -1,9 +1,17 @@
 {
-  "extends": ["development"],
+  "extends": [
+    "development"
+  ],
   "hints": {
     "highest-available-document-mode": "off",
     "detect-css-reflows/composite": "off",
     "detect-css-reflows/paint": "off",
-    "detect-css-reflows/layout": "off"
+    "detect-css-reflows/layout": "off",
+    "axe/structure": [
+      "default",
+      {
+        "list": "off"
+      }
+    ]
   }
 }

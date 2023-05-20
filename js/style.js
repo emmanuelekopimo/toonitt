@@ -10,6 +10,8 @@ if (html.scrollTop < 4) {
   navBar.classList.add("opaque");
 }
 
+console.log(navigator);
+
 const updateStyles = () => {
   if (html.scrollTop < 4) {
     navBar.classList.remove("opaque");
@@ -21,7 +23,7 @@ const updateStyles = () => {
       float.style.position = "fixed";
       float.style.top = "75px";
       float.style.right =
-        (innerWidth - 16 - sideBar.getBoundingClientRect().right).toString() +
+        (innerWidth - 17 - sideBar.getBoundingClientRect().right).toString() +
         "px";
       float.style.width =
         sideBar.getBoundingClientRect().width.toString() + "px";

@@ -23,4 +23,14 @@ fetch("https://outrageous-elk-wear.cyclic.app/?page=1")
       element.innerHTML = content;
       latest.append(element);
     });
+  })
+  .catch((err) => {
+    let element = document.createElement("div");
+    element.classList.add("widget");
+    let content = `
+        <div class="description error">
+            Error fetching content. Reload page
+        </div>`;
+    element.innerHTML = content;
+    latest.append(element);
   });

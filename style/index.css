@@ -87,49 +87,44 @@ b {
   padding-inline: 20px;
   padding-block: 10px;
   margin-block: 10px;
-}
-
-.block.subscribe-area {
-  padding-inline: 0px;
-  padding-block: 1px;
+  border-radius: 6px;
 }
 
 .side-title.subscribe-area {
   color: rgb(20, 20, 20);
 }
 
-.button-group {
-  display: grid;
-  grid-template-columns: 1fr;
+.subscribe-area {
+  padding-bottom: 20px;
 }
 
-.social-button {
-  height: 50px;
+.button {
+  color: black;
+  background-color: white;
+  border-radius: 6px;
+  width: 100%;
+  padding-block: 5px;
+  font-size: 18px;
   border: none;
 }
 
-.social-button:hover {
-  opacity: 0.7;
+.button:hover {
+  background-color: rgb(238, 238, 238);
 }
 
-.youtube {
-  background-color: rgb(255, 21, 21);
-}
-
-.facebook {
-  background-color: rgb(0, 68, 255);
-}
-
-.tik-tok {
-  background-color: rgb(255, 255, 255);
+.button:active {
+  background-color: rgb(224, 224, 224);
 }
 
 .input-area {
+  margin-top: 8px;
+  margin-bottom: 8px;
   padding-inline: 10px;
   background-color: white;
+  border-radius: 2px;
 }
 
-.email-box {
+.email {
   width: 100%;
   font-size: 1rem;
   outline: none;
@@ -137,6 +132,10 @@ b {
   background-color: white;
   padding-inline: 0px;
   padding-block: 10px;
+}
+
+.asterisk {
+  color: rgb(255, 38, 0);
 }
 
 .final {
@@ -147,6 +146,7 @@ b {
 }
 
 .widget {
+  border-radius: 6px;
   background-color: var(--light-theme-text);
   display: flex;
   gap: 10px;
@@ -163,19 +163,37 @@ b {
   text-align: left;
 }
 
+.description.error {
+  min-height: 35px;
+  height: 35px;
+}
+
 .embed {
   margin: auto;
   flex: 1;
   min-height: 400px;
 }
 
-.button-group.bottom {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  right: 10px;
+.profile-card {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 40px;
+  padding: 10px;
+  border-radius: 10px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.profile-bar {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 0px;
+  background-color: var(--dark-theme-background);
+  margin-top: -10px;
+  margin-inline: -10px;
+  padding-bottom: 1px;
+}
+
+.list {
+  margin-block: 5px;
 }
 
 @media (min-width: 1390px) {
@@ -218,5 +236,14 @@ b {
 
   .embed {
     min-height: 200px;
+  }
+
+  .profile-card {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-bar {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
   }
 }
