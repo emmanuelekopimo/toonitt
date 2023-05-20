@@ -196,6 +196,27 @@ b {
   margin-block: 5px;
 }
 
+.pages {
+  border-radius: 6px;
+  background-color: var(--dark-theme-background);
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.number {
+  font-size: 18px;
+  background-color: white;
+  color: black;
+  padding: 8px;
+  padding-inline: 12px;
+  border-radius: 6px;
+}
+
+.number.current {
+  font-weight: 800;
+}
+
 @media (min-width: 1390px) {
   .side {
     width: 23%;

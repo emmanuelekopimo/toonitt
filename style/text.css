@@ -97,3 +97,7 @@ h1 {
 .profile-content {
   margin-block: 10px;
 }
+
+.section-title.videos {
+  margin-top: 60px;
+}
