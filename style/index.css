@@ -237,6 +237,24 @@ b {
   margin-inline-end: 5px;
 }
 
+.quick-action {
+  padding-inline: 16x;
+  padding-block: 10px;
+  font-size: 16px;
+  background-color: var(--dark-theme-background);
+  color: white;
+  border-radius: 6px;
+  border: none;
+}
+
+.quick-action:hover {
+  background-color: rgb(48, 48, 48);
+}
+
+.quick-action:active {
+  background-color: black;
+}
+
 @media (min-width: 1390px) {
   .side {
     width: 23%;
