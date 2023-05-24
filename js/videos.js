@@ -12,7 +12,7 @@ fetch(`https://outrageous-elk-wear.cyclic.app/?page=${page}`)
     sectionTitle.innerText = sectionTitle.innerText + ` - Page ${page}`;
     let videos = data.videos; // Array
     let pages = data.pages; //Array
-    videos.forEach((video) => {
+    videos.forEach((video, index) => {
       let element = document.createElement("div");
       element.classList.add("widget");
       let content = `
