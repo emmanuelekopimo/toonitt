@@ -55,6 +55,7 @@ fetch(`https://outrageous-elk-wear.cyclic.app/?page=${page}`)
     });
   })
   .catch((err) => {
+    console.log(err);
     let element = document.createElement("div");
     element.classList.add("widget");
     let content = `
