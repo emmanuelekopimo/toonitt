@@ -27,7 +27,8 @@ fetch(`https://outrageous-elk-wear.cyclic.app/?page=${page}`)
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>`;
       if (index === 3) {
-        content += `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1186998729200892"
+        let adElement = document.createElement("script");
+        adElement.innerHTML = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1186998729200892"
               crossorigin="anonymous"></script>
               <ins class="adsbygoogle"
               style="display:block"
@@ -38,6 +39,7 @@ fetch(`https://outrageous-elk-wear.cyclic.app/?page=${page}`)
               <script>
               (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>`;
+        latest.append(adElement);
       }
       element.innerHTML = content;
       latest.append(element);
