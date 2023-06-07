@@ -10,8 +10,7 @@ if (html.scrollTop < 4) {
   navBar.classList.add("opaque");
 }
 
-console.log(navigator);
-
+// Function to update the styles
 const updateStyles = () => {
   if (html.scrollTop < 4) {
     navBar.classList.remove("opaque");
