@@ -238,13 +238,14 @@ b {
 }
 
 .quick-action {
-  padding-inline: 16x;
+  padding-inline: 16px;
   padding-block: 10px;
   font-size: 16px;
   background-color: var(--dark-theme-background);
   color: white;
   border-radius: 6px;
   border: none;
+  cursor: pointer;
 }
 
 .quick-action:hover {
@@ -258,7 +259,7 @@ b {
 .skit-card {
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
   margin-top: 40px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   border-radius: 10px;
 }
 

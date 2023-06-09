@@ -117,7 +117,7 @@ h1 {
 
 .skit-content {
   margin-block: 10px;
-  margin-inline: 10px;
+  margin-inline: 20px;
 }
 
 .section-title.videos {
@@ -137,5 +137,12 @@ h1 {
 
 .start-space {
   display: inline-block;
-  width: 28px;
+  width: 24px;
+}
+
+@media (max-width: 650px) {
+  .skit-content {
+    margin-block: 10px;
+    margin-inline: 10px;
+  }
 }
