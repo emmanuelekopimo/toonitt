@@ -23,8 +23,7 @@ fetch("https://outrageous-elk-wear.cyclic.app/?page=1")
             allowfullscreen></iframe>`;
       if (index === 3) {
         let adElement = document.createElement("script");
-        adElement.innerHTML = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1186998729200892"
-                    crossorigin="anonymous"></script>
+        adElement.innerHTML = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1186998729200892" crossorigin="anonymous"></script>
                     <ins class="adsbygoogle"
                     style="display:block"
                     data-ad-format="fluid"
