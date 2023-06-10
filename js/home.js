@@ -8,7 +8,7 @@ fetch("https://outrageous-elk-wear.cyclic.app/?page=1")
     let videos = data.videos; // Array
     videos.forEach((video, index) => {
       let element = document.createElement("div");
-      element.classList.add("widget");
+      element.classList.add("widget fade-in-section");
       let content = `
         <div class="description">
             <h3 class="detail">${video.title}</h3>
@@ -42,10 +42,14 @@ fetch("https://outrageous-elk-wear.cyclic.app/?page=1")
   .catch((err) => {
     let element = document.createElement("div");
     element.classList.add("widget");
+    element.classList.add("fade-in-section");
     let content = `
         <div class="description error">
             Error fetching content. Reload page
         </div>`;
     element.innerHTML = content;
     latest.append(element);
+    setTimeout(() => {
+      element.classList.add("is-visible");
+    });
   });

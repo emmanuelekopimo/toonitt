@@ -2,6 +2,7 @@ const html = document.querySelector("html");
 const float = document.querySelector(".float");
 const sideBar = document.querySelector(".side");
 const navBar = document.querySelector(".top-nav");
+const fadeInElements = document.querySelectorAll(".fade-in-section");
 
 //Intializations
 if (html.scrollTop < 4) {
@@ -35,6 +36,22 @@ const updateStyles = () => {
     float.style.right = "";
     float.style.width = "";
   }
+
+  fadeInElements.forEach((element) => {
+    if (elementIsVisibleInViewport(element)) {
+      element.classList.add("is-visible");
+    }
+  });
+};
+
+const elementIsVisibleInViewport = (el, partiallyVisible = true) => {
+  const { top, left, bottom, right } = el.getBoundingClientRect();
+  const { innerHeight, innerWidth } = window;
+  return partiallyVisible
+    ? ((top > 0 && top < innerHeight) ||
+        (bottom > 0 && bottom < innerHeight)) &&
+        ((left > 0 && left < innerWidth) || (right > 0 && right < innerWidth))
+    : top >= 0 && left >= 0 && bottom <= innerHeight && right <= innerWidth;
 };
 
 document.addEventListener("scroll", updateStyles, { passive: true });
