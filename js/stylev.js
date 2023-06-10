@@ -2,7 +2,7 @@ const html = document.querySelector("html");
 const float = document.querySelector(".float");
 const sideBar = document.querySelector(".side");
 const navBar = document.querySelector(".top-nav");
-const fadeInElements = document.querySelectorAll(".fade-in-section");
+var fadeInElements = document.querySelectorAll(".fade-in-section");
 
 const updateStyles = () => {
   if (innerWidth > 650) {
@@ -43,3 +43,8 @@ const elementIsVisibleInViewport = (el, partiallyVisible = true) => {
 
 document.addEventListener("scroll", updateStyles, { passive: true });
 setTimeout(updateStyles, 400);
+
+const updateFadeInElements = () => {
+  fadeInElements = document.querySelectorAll(".fade-in-section");
+};
+setInterval(updateFadeInElements, 1000);

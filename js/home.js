@@ -8,7 +8,8 @@ fetch("https://outrageous-elk-wear.cyclic.app/?page=1")
     let videos = data.videos; // Array
     videos.forEach((video, index) => {
       let element = document.createElement("div");
-      element.classList.add("widget fade-in-section");
+      element.classList.add("widget");
+      element.classList.add("fade-in-section");
       let content = `
         <div class="description">
             <h3 class="detail">${video.title}</h3>
