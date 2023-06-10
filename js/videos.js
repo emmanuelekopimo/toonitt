@@ -65,7 +65,4 @@ fetch(`https://outrageous-elk-wear.cyclic.app/?page=${page}`)
         </div>`;
     element.innerHTML = content;
     latest.append(element);
-    setTimeout(() => {
-      element.classList.add("is-visible");
-    });
   });
