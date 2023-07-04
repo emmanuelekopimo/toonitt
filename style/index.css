@@ -1,3 +1,6 @@
+/*
+:root is not really used
+*/
 :root {
   --light-theme-background: rgb(255, 255, 255);
   --light-theme-shadow: 0px 0px 8px rgba(0, 0, 0, 0.18);
