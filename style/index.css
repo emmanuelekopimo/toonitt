@@ -291,6 +291,40 @@ b {
   visibility: visible;
 }
 
+.store-item-name-area {
+  display: flex;
+  padding: 10px;
+}
+
+.store-item {
+  border-color: rgb(48, 48, 48);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 8px;
+  margin-block-end: 15px;
+}
+
+.download-button {
+  border: none;
+  background-color: rgb(44, 44, 44);
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  padding-inline: 10px;
+  min-height: 40px;
+  max-height: 40px;
+  align-self: center;
+}
+
+.download-button:hover {
+  background-color: rgb(77, 77, 77);
+}
+
+.download-button:active {
+  background-color: rgb(24, 24, 24);
+}
+
 @media (min-width: 1390px) {
   .side {
     width: 23%;

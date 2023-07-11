@@ -96,6 +96,23 @@ h1 {
   margin-left: 95px;
 }
 
+.store-item-name {
+  display: inline;
+  font-size: 22px;
+  color: var(--dark-theme-background);
+  margin-block: 8px;
+  font-weight: 600;
+  text-overflow: clip;
+}
+
+.store-item-price {
+  display: inline;
+  font-size: 14px;
+  color: rgb(46, 46, 46);
+  margin-block: 8px;
+  font-weight: 600;
+}
+
 .skit-name {
   display: inline;
   font-size: 22px;

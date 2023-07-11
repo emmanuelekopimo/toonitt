@@ -7,6 +7,12 @@
   border-radius: 6px;
 }
 
+.store-preview {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
 .profile-image {
   display: inline;
   width: 60px;
