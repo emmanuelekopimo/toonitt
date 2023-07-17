@@ -20,3 +20,7 @@
   translate: 20px -24px;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 }
+
+.little-banner {
+  width: 100%;
+}
